@@ -1,0 +1,50 @@
+package WebTable;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class WebTableU {
+	public List<WebElement> getHeader(WebElement wt){
+		List<WebElement> headers=wt.findElements(By.xpath("child::thread/tr/th"));
+		return(headers);
+		
+	}
+	
+	public int getRowsCount(WebElement wt) {
+		int value=wt.findElements(By.xpath("child::tbody/tr")).size();
+		return(value);
+	}
+	
+	public List<WebElement> getRows(WebElement wt) {
+		List<WebElement> rows=wt.findElements(By.xpath("child::tbody/tr"));
+		return(rows);
+	}
+	
+	public int getColumnsCountInRow(WebElement wt, int rownum) {
+		int value=wt.findElements(By.xpath("child::tbody/tr["+rownum+"]/td")).size();
+		return(value);
+		
+	}
+	
+	public String getCellValue(RemoteWebDriver driver, WebElement wt, int rownum, int column) {
+		
+		WebElement cell=wt.findElement(By.xpath("child::tbody/tr["+rownum+"]/td["+column+"]"));
+		String value=(String)driver.executeScript("return(arguments[0].textContent);", cell);
+		return(value);
+		
+	}
+	
+	public List<WebElement> getCellChilds(WebElement wt, int rownum,int column, By loc){
+		List<WebElement> eles=wt.findElement(By.xpath("child::tbody/tr["+rownum+"]/td["+column+"]")).findElements(loc);
+				
+		return(eles);		
+			
+		}
+	}
+	
+	
+
+
