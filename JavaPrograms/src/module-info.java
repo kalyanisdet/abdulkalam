@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author arako
+ *
+ */
+module JavaPrograms {
+}
