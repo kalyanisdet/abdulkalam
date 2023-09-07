@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.FastMailTest2">
+      <class name="DailyPractice.Test117">
         <methods>
-          <include name="method"/>
+          <include name="coveredEle"/>
         </methods>
-      </class> <!-- practice.FastMailTest2 -->
+      </class> <!-- DailyPractice.Test117 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
