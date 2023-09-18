@@ -9,6 +9,7 @@
     <artifactId>webdrivermanager</artifactId>
     <version>5.4.0</version>
 </dependency>
+
  
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -27,11 +28,24 @@
     <version>3.11.0</version>
 </dependency>
 
+<dependency>
+    <groupId>ru.yandex.qatools.ashot</groupId>
+    <artifactId>ashot</artifactId>
+    <version>1.5.4</version>
+</dependency>
 
+<dependency>
+	<groupId>org.magnitia.abdulkalam</groupId>
+	<artifactId>ATUTestRecorder</artifactId>
+	<version>2.1</version>
+	<scope>System</scope>
+	<systemPath>${basedir}/src/test/resources/ATUTestRecorder_2.1.jar</systemPath>
+</dependency>
 
-
-
-
-
+  	<dependency>
+  		<groupId>CucumberJava</groupId>
+  		<artifactId>CucumberJava</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies> 
 </project>

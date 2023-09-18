@@ -28,6 +28,7 @@ public class SuggestionsTest {
 		int flag=0;
 		for(WebElement items:list) {
 			String str=items.getText();
+			System.out.println();
 			str=str.toLowerCase();
 			str=str.replace(" ", "");
 			x=x.toLowerCase();
